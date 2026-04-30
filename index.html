@@ -109,6 +109,16 @@ body{background:var(--bg);min-height:100vh}
 .idea-tag a{color:inherit;text-decoration:none;border-bottom:1px dotted var(--o)}
 .idea-tag a:hover{border-bottom-style:solid}
 
+.reel-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:0.5rem}
+@media(max-width:560px){.reel-grid{grid-template-columns:1fr}}
+.reel-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:0.95rem 1.05rem;display:flex;flex-direction:column}
+.reel-eyebrow{font-family:'Oswald',sans-serif;font-size:9.5px;letter-spacing:0.16em;color:var(--o);text-transform:uppercase;font-weight:600;margin-bottom:0.4rem}
+.reel-title{font-family:'Oswald',sans-serif;font-weight:600;font-size:13.5px;color:var(--txt);letter-spacing:0.03em;margin-bottom:0.45rem;line-height:1.3}
+.reel-body{font-size:12.5px;color:var(--txt2);line-height:1.6;flex:1;margin-bottom:0.5rem}
+.reel-body em{font-family:'EB Garamond',Georgia,serif;font-style:italic;color:var(--txt)}
+.reel-body a{color:inherit;text-decoration:none;border-bottom:1px dotted var(--border-strong);transition:color 0.15s,border-color 0.15s}
+.reel-body a:hover{color:var(--o);border-bottom-color:var(--o)}
+
 .whats-inside{margin:0.5rem 0 1rem}
 .wi-heading{font-family:'Oswald',sans-serif;font-weight:600;font-size:18px;color:var(--txt);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1rem;text-align:center}
 .whats-inside-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
@@ -496,11 +506,50 @@ body{background:var(--bg);min-height:100vh}
     <p class="section-subtitle">A few specifics from your recent and historical work that stuck with us.</p>
   </div>
 
-  <div class="section-block">
-    <p>Last week your team posted the NextGen Acela spot for <a href="https://www.linkedin.com/company/mekanism" target="_blank" rel="noopener">Amtrak</a>. The framing took its visual cues from automotive ads, with the kind of sleek interior portraiture that earns the comparison. The post landed on Mekanism's company page (36,089 followers) as part of an ongoing Amtrak relationship that already includes <em>'Trak Suits</em> and <em>Retrain Travel</em>.</p>
-    <p>The deeper reel keeps the bar that high. <a href="https://www.mekanism.com/clients/frida-mom-stream-of-lactation" target="_blank" rel="noopener">Frida Mom's <em>Stream of Lactation</em></a> picked up a Cannes Lion shortlist, an Effie Silver, and a Webby. <a href="https://www.mekanism.com/clients/medmen-the-new-normal" target="_blank" rel="noopener">MedMen's <em>The New Normal</em></a> took D&amp;AD's Wood Pencil for Branded Content &amp; Entertainment, a Cannes Bronze for Film Craft, and an AICP for Cinematography. <a href="https://www.mekanism.com/clients/charles-schwab-ask-questions" target="_blank" rel="noopener">Charles Schwab's Carl, the Anti-Hero Broker</a>. <a href="https://www.mekanism.com/clients/lendingtree-linda-finds-a-lenda" target="_blank" rel="noopener">Molly Shannon as Linda from Long Island for LendingTree</a>. <a href="https://www.mekanism.com/clients/peloton-we-all-have-our-reasons" target="_blank" rel="noopener">Peloton's <em>We All Have Our Reasons</em></a> anthology of real members. Across the public reel: 20 currently featured campaigns, 3 Cannes Lions, 4 Effies, 4 Webbys, two Ad Age Small Agency of the Year wins, and two active Harvard Business School cases.</p>
-    <p>Then there's <em>Andre Is an Idiot</em>. The 2026 A24 documentary about your colleague André Ricciardi, premiered at Sundance, with the colorectal cancer awareness PSA Mekanism made with Joint Venture as the brand-side response to it. Jason, that piece said something about the way your shop treats real people and real stakes. We watched it the week it dropped.</p>
-    <p>The Soul &amp; Science frame holds across all of it. 156 episodes of the podcast and counting, multiple Signal Awards, a W3 Silver. The KISS framing in your <a href="https://www.adweek.com/brand-marketing/3-things-kiss-taught-me-about-marketing-174882/" target="_blank" rel="noopener">Adweek piece</a> a decade ago, where mythology beat product. Your line in JMU News in 2016, that you "have to be what people are interested in." That's a posture we recognize, and it lines up with how we run our own production work.</p>
+  <div class="reel-grid">
+
+    <div class="reel-card">
+      <div class="reel-eyebrow">This Past Week</div>
+      <div class="reel-title">NextGen Acela For Amtrak</div>
+      <div class="reel-body">Visual cues from automotive ads, with sleek interior portraiture that earns the comparison. Part of an ongoing Amtrak relationship that already includes <em>'Trak Suits</em> and <em>Retrain Travel</em>. Posted to a company page sitting at 36,089 followers.</div>
+      <a class="source-link" href="https://www.linkedin.com/company/mekanism" target="_blank" rel="noopener">linkedin.com</a>
+    </div>
+
+    <div class="reel-card">
+      <div class="reel-eyebrow">The Award Reel</div>
+      <div class="reel-title">Stream Of Lactation + The New Normal</div>
+      <div class="reel-body">Frida Mom's <em>Stream of Lactation</em>: Cannes Lion shortlist, Effie Silver, Webby. MedMen's <em>The New Normal</em>: D&amp;AD Wood Pencil for Branded Content, Cannes Bronze for Film Craft, AICP for Cinematography.</div>
+      <a class="source-link" href="https://www.mekanism.com/clients/frida-mom-stream-of-lactation" target="_blank" rel="noopener">mekanism.com</a>
+    </div>
+
+    <div class="reel-card">
+      <div class="reel-eyebrow">Recurring Characters</div>
+      <div class="reel-title">Carl + Linda</div>
+      <div class="reel-body"><a href="https://www.mekanism.com/clients/charles-schwab-ask-questions" target="_blank" rel="noopener">Charles Schwab's Carl, the Anti-Hero Broker</a>, who your case-study page calls <em>"a humorous take-down of traditional firms."</em> <a href="https://www.mekanism.com/clients/lendingtree-linda-finds-a-lenda" target="_blank" rel="noopener">Molly Shannon as Linda from Long Island</a> for LendingTree, their first celebrity spokesperson.</div>
+      <a class="source-link" href="https://www.mekanism.com/clients" target="_blank" rel="noopener">mekanism.com</a>
+    </div>
+
+    <div class="reel-card">
+      <div class="reel-eyebrow">Anthology</div>
+      <div class="reel-title">We All Have Our Reasons</div>
+      <div class="reel-body">Peloton's anthology of real members, named on screen, told in their own words. A campaign format with a long-form extension waiting inside it.</div>
+      <a class="source-link" href="https://www.mekanism.com/clients/peloton-we-all-have-our-reasons" target="_blank" rel="noopener">mekanism.com</a>
+    </div>
+
+    <div class="reel-card">
+      <div class="reel-eyebrow">Long-Form</div>
+      <div class="reel-title">Andre Is An Idiot</div>
+      <div class="reel-body">The 2026 A24 documentary about your colleague André Ricciardi, premiered at Sundance. Mekanism made the colorectal cancer awareness PSA with Joint Venture as the brand-side response. We watched it the week it dropped.</div>
+      <a class="source-link" href="https://www.hollywoodreporter.com/movies/movie-news/andre-is-an-idiot-documentary-release-sundance-1236425746/" target="_blank" rel="noopener">hollywoodreporter.com</a>
+    </div>
+
+    <div class="reel-card">
+      <div class="reel-eyebrow">Owned Property</div>
+      <div class="reel-title">Soul &amp; Science</div>
+      <div class="reel-body">156 episodes of the podcast, multiple Signal Awards, a 2023 W3 Silver. The KISS framing in your <a href="https://www.adweek.com/brand-marketing/3-things-kiss-taught-me-about-marketing-174882/" target="_blank" rel="noopener">Adweek piece</a> a decade ago, plus your line in JMU News in 2016 that you <em>"have to be what people are interested in."</em> That's a posture we recognize.</div>
+      <a class="source-link" href="https://podcasts.apple.com/us/podcast/soul-science-fast-forward-your-marketing-mind/id1614094981" target="_blank" rel="noopener">apple.com</a>
+    </div>
+
   </div>
 
   <hr class="rule-orange"/>
